@@ -1,0 +1,61 @@
+@font-face {
+    font-family: Georgia2;
+    src: url(/fonts/Georgia.ttf);
+}
+
+body {
+    height: 100vh;
+    background-image: linear-gradient(to top, #009900, #109910, #209920, #409940, #609960, #709970, #CCCCCC, #FFFFFF);
+}
+
+h1 {
+    text-align: center;
+    font-size: 120px;
+    font-family: Georgia2;
+    color: #ffffff
+
+}
+
+#Copyright {
+    position: fixed;
+    bottom: 0;
+}
+
+#CW2 {
+    color: #6610acaf;
+}
+
+.CONTAINER {
+    width: 540px;
+    height: 50%;
+    border-width:1px;
+    color:#ffffff;
+    border-color:#ff0000;
+    font-family: Georgia2;
+    font-weight:bold;
+    border-top-left-radius:20px;
+    border-top-right-radius:20px;
+    border-bottom-left-radius:20px;
+    border-bottom-right-radius:20px;
+    box-shadow:inset 0px 1px 0px 0px #a0544e;
+    text-shadow:inset 0px 1px 0px #b23e35;
+    background:linear-gradient(to top,#e91c09, #db4739);
+    margin: auto;
+}
+
+.BUTTON1 {
+    background-color: #ee5757;
+    color: #FFFFFF;
+    margin-left: 10px;
+    margin-top: 10px;
+    
+}
+
+.news1 {
+    padding-left: 45px;
+    padding-top: 20px;
+}
+
+#news-header {
+    margin-left: 20px;
+}
