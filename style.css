@@ -92,3 +92,11 @@ h1 {
     color: #FFFFFF;
     font-family: Georgia2;
 }
+
+th, td, table {
+    color: #000000;
+    font-family: Georgia2;
+    border: 1px solid black;
+    padding: auto;
+    margin: auto;
+}
