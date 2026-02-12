@@ -13,7 +13,7 @@ h1 {
     text-align: center;
     font-size: 120px;
     font-family: Georgia2;
-    color: #ffffff
+    color: #FFFFFF
 
 }
 
@@ -27,10 +27,10 @@ h1 {
 }
 
 .CONTAINER {
-    width: 540px;
+    width: 75%;
     height: 50%;
     border-width:1px;
-    color:#ffffff;
+    color:#FFFFFF;
     border-color:#ff0000;
     font-family: Georgia2;
     font-weight:bold;
@@ -49,6 +49,7 @@ h1 {
     color: #FFFFFF;
     margin-left: 10px;
     margin-top: 10px;
+    font-family: Georgia2;
     
 }
 
@@ -84,4 +85,10 @@ h1 {
 .topnav a.active {
     background-color: #EBEBEB;
     color: black;
+}
+
+.para1 {
+    text-align: center;
+    color: #FFFFFF;
+    font-family: Georgia2;
 }
