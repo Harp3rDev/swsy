@@ -6,14 +6,14 @@
 body {
     margin: 0;
     height: 100vh;
-    background-image: linear-gradient(to top, #009900, #109910, #209920, #409940, #609960, #709970, #CCCCCC, #FFFFFF);
+    background: linear-gradient(180deg,rgba(199, 230, 189, 1) 0%, rgba(144, 199, 144, 1) 50%, rgba(74, 143, 74, 1) 100%);
 }
 
 h1 {
     text-align: center;
     font-size: 120px;
     font-family: Georgia2;
-    color: #FFFFFF
+    color: #020101
 
 }
 
@@ -40,12 +40,12 @@ h1 {
     border-bottom-right-radius:20px;
     box-shadow:inset 0px 1px 0px 0px #a0544e;
     text-shadow:inset 0px 1px 0px #b23e35;
-    background:linear-gradient(to top,#e91c09, #db4739);
+    background-image: linear-gradient(#825F87, rgb(132, 63, 141));
     margin: auto;
 }
 
 .BUTTON1 {
-    background-color: #ee5757;
+    background-color: #9157ee;
     color: #FFFFFF;
     margin-left: 10px;
     margin-top: 10px;
@@ -56,21 +56,23 @@ h1 {
 .news1 {
     padding-left: 45px;
     padding-top: 20px;
+    font-size: 20px
 }
 
 #news-header {
     margin-left: 20px;
+    font-size: 30px;
 }
 
 .topnav {
     overflow: hidden;
-    background-image: linear-gradient(#990000, #db5d5d);
+    background-image: linear-gradient(#825F87, #af70b8);
 }
 
 .topnav a {
     font-family: Georgia2;
     float: left;
-    color: #FFFFFF;
+    color: #ffffff;
     text-align: center;
     padding: 14px 16px;
     text-decoration: none;
@@ -89,7 +91,7 @@ h1 {
 
 .para1 {
     text-align: center;
-    color: #FFFFFF;
+    color: #080505;
     font-family: Georgia2;
 }
 
