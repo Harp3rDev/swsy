@@ -1,0 +1,149 @@
+@font-face {
+    font-family: Georgia2;
+    src: url(/fonts/Data70.ttf);
+}
+
+
+
+body {
+    margin: 0;
+    height: 100vh;
+    background: linear-gradient(180deg,rgb(0, 0, 0) 0%, rgb(15, 26, 15) 50%, rgb(0, 0, 0) 100%);
+}
+
+h1 {
+    text-align: center;
+    font-size: 60px;
+    font-family: Georgia2;
+    color: #00ff3c;
+    text-shadow: 1px 1px 2px green, 0 0 25px green, 0 0 5px green;
+}
+
+h2 {
+
+    text-align: center;
+    font-size: 20px;
+    font-family: Georgia;
+    color: #10CC10
+}
+
+h3 {
+
+    text-align: center;
+    font-size: 18px;
+    font-family: Georgia;
+    padding-top: 10px;
+    background-color: #0c2709;
+}
+
+#Copyright {
+    position: fixed;
+    bottom: 0;
+    color: #FFFFFF;
+}
+
+a {
+    color:#b6d014;
+}
+
+a:visited {
+    color:#8cff00;
+}
+
+#CW2 {
+    color: #b6d014;
+}
+
+.CONTAINER {
+    width: 75%;
+    height: 50%;
+    border-width:1px;
+    color:#FFFFFF;
+    border-color:#ff0000;
+    font-family: Georgia2;
+    font-weight:bold;
+    border-top-left-radius:20px;
+    border-top-right-radius:20px;
+    border-bottom-left-radius:20px;
+    border-bottom-right-radius:20px;
+    box-shadow:inset 0px 1px 0px 0px #a0544e;
+    text-shadow:inset 0px 1px 0px #b23e35;
+    background-image: linear-gradient(#825F87, rgb(132, 63, 141));
+    margin: auto;
+}
+
+.BUTTON1 {
+    background-color: #9157ee;
+    color: #FFFFFF;
+    margin-left: 10px;
+    margin-top: 10px;
+    font-family: Georgia2;
+    
+}
+
+.news1 {
+    padding-left: 45px;
+    padding-top: 20px;
+    font-size: 20px
+}
+
+#news-header {
+    margin-left: 20px;
+    font-size: 30px;
+}
+
+.topnav {
+    overflow: hidden;
+    background-image: linear-gradient(#ccff00, #083b2a);
+}
+
+.topnav a {
+    font-family: Georgia2;
+    float: left;
+    color: #ffffff;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-size: 17px;
+}
+
+.topnav a:hover {
+    background-color: #ccb0b0af;
+    color: black;
+}
+
+.topnav a.active {
+    background-color: #EBEBEB;
+    color: black;
+}
+
+.para1 {
+    text-align: center;
+    color: #080505;
+    font-family: Georgia2;
+}
+
+th, td, table {
+    color: #000000;
+    font-family: Georgia2;
+    border: 1px solid black;
+    padding: auto;
+    margin: auto;
+}
+
+p {
+    font-family: Georgia;
+    font-size: 18px;
+    color:#00ff3c;
+    padding-top:40px;
+    padding-left: 40px;
+}
+
+#backbutton {
+    color:#FFFFFF;
+    background-color:#000000;
+    position: relative;
+    float: left;
+    font-size: 22px;
+    left: 40px;
+}
