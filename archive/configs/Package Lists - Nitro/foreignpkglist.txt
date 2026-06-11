@@ -1,0 +1,11 @@
+ascii-image-converter
+brother-mfc-j985dw
+gnu-netcat
+hid-nintendo-nso-dkms
+joycond-git
+menulibre
+ocs-url
+pakbak-git
+proton-ge-custom-bin
+rmlint-git
+xwiimote

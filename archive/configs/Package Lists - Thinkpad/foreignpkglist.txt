@@ -1,0 +1,17 @@
+brother-mfc-j985dw
+evtest-qt-git
+eww
+gdm-settings
+grub-customizer
+iso2god-rs-bin
+librewolf-bin
+localsend
+neohtop
+ocs-url
+paccache-hook
+packettracer
+python-validity
+timeshift-autosnap
+ttf-harmonyos-sans
+ttf-ms-fonts
+yay
