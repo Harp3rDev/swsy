@@ -1,0 +1,36 @@
+# General Settings
+screenshots
+effect-pixelate=10
+ignore-empty-password
+font="JetBrains Mono"
+font-size=14
+fade-in=0.2
+
+# --- FIX: OVERLAY THE AVATAR IMAGE ---
+# Syntax: effect-compose="[position];[size];[gravity];[path]"
+# This centers a 200x200px avatar right in the middle of the screen
+effect-compose=50%,50%;200x200;center;/home/amy/.config/swaylock/avatar.png
+# Enable Clock
+clock
+timestr=%H:%M
+datestr=%A, %B %d
+
+# Indicator Ring Layout
+indicator-radius=90
+indicator-thickness=8
+indicator-caps-lock
+
+# --- Ring & Text Colors (Deep Forest Theme) ---
+inside-color=232e26
+ring-color=435840
+text-color=e2ebd5
+
+# When Typing
+inside-ver-color=2b3a2f
+ring-ver-color=a3b899
+text-ver-color=e2ebd5
+
+# When Password is Wrong
+inside-wrong-color=7a4848
+ring-wrong-color=fa4848
+text-wrong-color=ffffff

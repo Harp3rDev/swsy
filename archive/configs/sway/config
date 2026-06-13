@@ -1,0 +1,266 @@
+ ###############################################################################
+## VARIABLES
+###############################################################################
+
+# Logo key. Use Mod1 for Alt.
+set $mod Mod4
+
+# Home row direction keys, like vim
+set $left h
+set $down j
+set $up k
+set $right l
+
+# Preferred Applications
+set $term foot
+set $menu wmenu-run
+set $browser librewolf
+
+
+###############################################################################
+## OUTPUT CONFIGURATION
+###############################################################################
+
+# Default wallpaper
+output * bg /home/amy/Pictures/Wallpapers/674.jpg fill
+
+# Displays Layout (Internal & External HDMI)
+output eDP-1 res 1920x1080 position 0 0 scale 1.15
+output HDMI-A-1 res 1920x1080 position 1920 0 scale 1.1
+
+# Automatically toggle internal screen when closing/opening the laptop lid
+bindswitch lid:on output eDP-1 disable
+bindswitch lid:off output eDP-1 enable
+
+
+###############################################################################
+## WINDOW LOOK AND FEEL (Borders & Colors)
+###############################################################################
+
+# Set border style for new windows (removes title bar, 2px border)
+default_border pixel 2
+default_floating_border pixel 2
+
+# Force all existing windows on your current screen to update right now
+for_window [class=".*"] border pixel 2
+for_window [app_id=".*"] border pixel 2
+
+# Window Colors
+# class                 border  backgr  text    indic   child_border
+client.focused          #577053 #577053 #ffffff #435840 #577053
+client.focused_inactive #232e26 #232e26 #a3b899 #232e26 #232e26
+client.unfocused        #1c251f #1c251f #a3b899 #1c251f #1c251f
+client.urgent           #7a4848 #7a4848 #ffffff #7a4848 #7a4848
+
+
+###############################################################################
+## INPUT CONFIGURATION
+###############################################################################
+
+input "type:touchpad" {
+    dwt enabled                  # Disable While Typing (prevents palm misclicks)
+    tap enabled                  # Tap the pad to click
+    natural_scroll disabled      # Normal, traditional scrolling direction
+    middle_emulation enabled     # Click left+right together to middle-click
+    accel_profile flat           # Smooth, consistent cursor speed
+    pointer_accel 0.2            # Make the cursor a tiny bit faster
+    click_method clickfinger     # 2 fingers to right-click anywhere
+    scroll_factor 0.8            # Make web pages scroll slightly slower/smoother
+}
+
+input "type:keyboard" {
+    xkb_layout "us"
+}
+
+input "type:pointer" {
+    natural_scroll disabled      # Normal scroll-wheel behavior for physical mice
+    pointer_accel 0.0            # Neutral acceleration
+}
+
+# Trackpad gestures for switching workspaces
+bindgesture swipe:left workspace prev 
+bindgesture swipe:right workspace next 
+
+
+###############################################################################
+## CORE KEY BINDINGS (System Controls)
+###############################################################################
+
+bindsym $mod+t exec $term
+bindsym $mod+c kill
+bindsym $mod+d exec $menu
+# bindsym $mod+b exec $browser
+
+# Reload the configuration file
+bindsym $mod+Shift+r reload
+
+# Floating modifiers (Drag/Resize windows)
+floating_modifier $mod normal
+
+# Power Menu Mode
+set $power_menu (r)eboot, (s)hutdown, (e)xit sway, (l)ock
+bindsym $mod+Shift+p mode "$power_menu"; exec swaynag -t warning -m "Power Mode Active: [R]eboot | [S]hutdown | [E]xit | [L]ock | [Esc] Cancel"
+
+mode "$power_menu" {
+    bindsym r exec killall swaynag; exec systemctl reboot
+    bindsym s exec killall swaynag; exec systemctl poweroff
+    bindsym e exec killall swaynag; exec swaymsg exit
+    bindsym l exec killall swaynag; exec swaylock; mode "default"
+
+    bindsym Return exec killall swaynag; mode "default"
+    bindsym Escape exec killall swaynag; mode "default"
+}
+
+
+###############################################################################
+## NAVIGATION & WINDOW MANAGEMENT
+###############################################################################
+
+# Move focus around (Vim Keys)
+bindsym $mod+$left focus left
+bindsym $mod+$down focus down
+bindsym $mod+$up focus up
+bindsym $mod+$right focus right
+
+# Move focus around (Arrow Keys)
+bindsym $mod+Left focus left
+bindsym $mod+Down focus down
+bindsym $mod+Up focus up
+bindsym $mod+Right focus right
+
+# Move the focused window (Vim Keys)
+bindsym $mod+Shift+$left move left
+bindsym $mod+Shift+$down move down
+bindsym $mod+Shift+$up move up
+bindsym $mod+Shift+$right move right
+
+# Move the focused window (Arrow Keys)
+bindsym $mod+Shift+Left move left
+bindsym $mod+Shift+Down move down
+bindsym $mod+Shift+Up move up
+bindsym $mod+Shift+Right move right
+
+
+###############################################################################
+## WORKSPACES
+###############################################################################
+
+# Switch to workspace
+bindsym $mod+1 workspace number 1
+bindsym $mod+2 workspace number 2
+bindsym $mod+3 workspace number 3
+bindsym $mod+4 workspace number 4
+bindsym $mod+5 workspace number 5
+bindsym $mod+6 workspace number 6
+bindsym $mod+7 workspace number 7
+bindsym $mod+8 workspace number 8
+bindsym $mod+9 workspace number 9
+bindsym $mod+0 workspace number 10
+
+# Move focused container to workspace
+bindsym $mod+Shift+1 move container to workspace number 1
+bindsym $mod+Shift+2 move container to workspace number 2
+bindsym $mod+Shift+3 move container to workspace number 3
+bindsym $mod+Shift+4 move container to workspace number 4
+bindsym $mod+Shift+5 move container to workspace number 5
+bindsym $mod+Shift+6 move container to workspace number 6
+bindsym $mod+Shift+7 move container to workspace number 7
+bindsym $mod+Shift+8 move container to workspace number 8
+bindsym $mod+Shift+9 move container to workspace number 9
+bindsym $mod+Shift+0 move container to workspace number 10
+
+
+###############################################################################
+## LAYOUT MODES & RESIZING
+###############################################################################
+
+# Layout Splitting
+bindsym $mod+b splith
+bindsym $mod+v splitv
+
+# Layout Styles
+bindsym $mod+s layout stacking
+bindsym $mod+w layout tabbed
+bindsym $mod+e layout toggle split
+
+# Fullscreen Toggle
+bindsym $mod+f fullscreen
+
+# Tiling/Floating Toggles
+bindsym $mod+Shift+space floating toggle
+bindsym $mod+space focus mode_toggle
+bindsym $mod+a focus parent
+
+# Scratchpad Controls
+bindsym $mod+Shift+minus move scratchpad
+bindsym $mod+minus scratchpad show
+
+# Resize Window Mode
+mode "resize" {
+    bindsym $left resize shrink width 10px
+    bindsym $down resize grow height 10px
+    bindsym $up resize shrink height 10px
+    bindsym $right resize grow width 10px
+
+    bindsym Left resize shrink width 10px
+    bindsym Down resize grow height 10px
+    bindsym Up resize shrink height 10px
+    bindsym Right resize grow width 10px
+
+    bindsym Return mode "default"
+    bindsym Escape mode "default"
+}
+bindsym $mod+r mode "resize"
+
+
+###############################################################################
+## HARDWARE UTILITIES (Volume, Media, Brightness)
+###############################################################################
+
+# PulseAudio Volume Controls
+bindsym --locked XF86AudioMute exec pactl set-sink-mute \@DEFAULT_SINK@ toggle
+bindsym --locked XF86AudioLowerVolume exec pactl set-sink-volume \@DEFAULT_SINK@ -5%
+bindsym --locked XF86AudioRaiseVolume exec pactl set-sink-volume \@DEFAULT_SINK@ +5%
+bindsym --locked XF86AudioMicMute exec pactl set-source-mute \@DEFAULT_SOURCE@ toggle
+
+# playerctl Media Controls
+bindsym --locked XF86AudioPlay exec playerctl play-pause
+bindsym --locked XF86AudioPause exec playerctl play-pause
+bindsym --locked XF86AudioPrev exec playerctl previous
+bindsym --locked XF86AudioNext exec playerctl next
+bindsym --locked XF86AudioStop exec playerctl stop
+
+# brightnessctl Backlight Controls
+bindsym --locked XF86MonBrightnessDown exec brightnessctl set 5%-
+bindsym --locked XF86MonBrightnessUp exec brightnessctl set 5%+
+
+# Screenshots
+bindsym Print exec grim
+
+
+###############################################################################
+## AUTOSTART & SYSTEM DAEMONS
+###############################################################################
+
+# Idle/Lock Management
+exec swayidle -w \
+        timeout 330 'swaylock -f -c 000000' \
+        timeout 630 'swaymsg "output * power off"' resume 'swaymsg "output * power on"' \
+        before-sleep 'swaylock -f -c 000000'
+
+# Status Bar
+bar {
+    swaybar_command waybar
+}
+
+# Dynamic Display Handler
+exec kanshi
+
+# Background Services & Applications
+exec copyq
+exec localsend
+exec protonvpn-app
+exec easyeffects -w
+
+# Include external system snippets
+include /etc/sway/config.d/*
