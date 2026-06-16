@@ -58,9 +58,12 @@
         "format": "BAT {capacity}%"
     },
 
-    "clock": {
-        "format": "{:%H:%M}"
-    },
+     "clock": {
+    "interval": 1,
+    "format": "{:%a, %b %d | %I:%M:%S %p}",
+    "tooltip-format": "<big>{:%Y %B}</big>\n<tt><small>{calendar}</small></tt>"
+}   
+ },
 
     "tray": {
         "icon-size": 14,

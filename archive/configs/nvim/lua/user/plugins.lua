@@ -27,11 +27,14 @@ local plugins = {
 
     -- 2. Telescope (The Ultimate Fuzzy Finder)
     {
-        "nvim-telescope/telescope.nvim",
-        tag = "0.1.8",
-        dependencies = { "nvim-lua/plenary.nvim" }
-    },
-
+    'nvim-telescope/telescope.nvim', 
+    tag = '0.1.8', -- or whatever version you use
+    dependencies = { 'nvim-lua/plenary.nvim' },
+    lazy = false, -- <-- Add this line
+    config = function()
+        require('telescope').setup({})
+    end
+    },   
     -- 3. nvim-autopairs (Auto-close brackets, quotes, etc.)
     {
         "windwp/nvim-autopairs",

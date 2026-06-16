@@ -14,6 +14,7 @@ ctop
 cups-pdf
 dialog
 discord
+dmenu
 docker
 docker-compose
 easyeffects
@@ -22,10 +23,7 @@ ex-vi-compat
 exfat-utils
 fastfetch
 file-roller
-firefox
-foot
 freerdp
-gamemode
 gimp
 github-cli
 gnome-browser-connector
@@ -45,13 +43,13 @@ hyprpaper
 hyprshot
 inetutils
 intel-ucode
+kanshi
 kdenlive
 kitty
 krita
 lib32-gamemode
 libreoffice-fresh
 lsp-plugins
-mako
 mate-calc
 mate-icon-theme-faenza
 mate-power-manager
@@ -81,7 +79,7 @@ rofi
 sassc
 sbctl
 sqlitebrowser
-swaybg
+sway
 tailscale
 tcpdump
 tealdeer
@@ -103,7 +101,6 @@ wikiman
 winetricks
 wireless_tools
 wireshark-qt
-wmenu
 woff2-font-awesome
 xf86-video-amdgpu
 xf86-video-ati

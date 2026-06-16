@@ -10,8 +10,10 @@ neohtop
 ocs-url
 paccache-hook
 packettracer
+paru
+paru-debug
 python-validity
+swaylock-effects
 timeshift-autosnap
 ttf-harmonyos-sans
 ttf-ms-fonts
-yay

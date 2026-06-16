@@ -1,4 +1,3 @@
- ###############################################################################
 ## VARIABLES
 ###############################################################################
 
@@ -26,12 +25,12 @@ output * bg /home/amy/Pictures/Wallpapers/674.jpg fill
 
 # Displays Layout (Internal & External HDMI)
 output eDP-1 res 1920x1080 position 0 0 scale 1.15
-output HDMI-A-1 res 1920x1080 position 1920 0 scale 1.1
+output HDMI-A-2 res 1920x1080 position 1920 0 scale 1.1
 
+# Managed by Kanshi
 # Automatically toggle internal screen when closing/opening the laptop lid
-bindswitch lid:on output eDP-1 disable
-bindswitch lid:off output eDP-1 enable
-
+# bindswitch lid:on output eDP-1 disable
+# bindswitch lid:off output eDP-1 enable
 
 ###############################################################################
 ## WINDOW LOOK AND FEEL (Borders & Colors)
@@ -52,6 +51,8 @@ client.focused_inactive #232e26 #232e26 #a3b899 #232e26 #232e26
 client.unfocused        #1c251f #1c251f #a3b899 #1c251f #1c251f
 client.urgent           #7a4848 #7a4848 #ffffff #7a4848 #7a4848
 
+# Font setting to Georgia
+font Georgia 18 
 
 ###############################################################################
 ## INPUT CONFIGURATION
@@ -254,13 +255,14 @@ bar {
 }
 
 # Dynamic Display Handler
-exec kanshi
+exec_always kanshi
 
 # Background Services & Applications
 exec copyq
 exec localsend
-exec protonvpn-app
 exec easyeffects -w
+exec protonvpn-app --start-minimized
+exec nm-applet --indicator
 
 # Include external system snippets
 include /etc/sway/config.d/*
