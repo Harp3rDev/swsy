@@ -1,0 +1,13 @@
+/* 🦘 Sandy Yellow Theme Waybar Variable Map */
+@define-color theme_bg_dark       #f8f1ed;         /* Very soft, bright sand background */
+@define-color theme_accent        #e9c46a;         /* Bright outback sunshine yellow */
+@define-color theme_border        #e2d4c9;         /* Warm sand border */
+@define-color theme_focused_ws    #e9c46a;         /* Active workspace highlight */
+@define-color theme_block_alt1    #e6ccb2;         /* Medium sand block (darker for contrast) */
+@define-color theme_block_alt2    #ddc3a5;         /* Warm tan block (darker for contrast) */
+@define-color theme_clock_bg      #e9c46a;         /* Yellow background for clock */
+
+/* Text Palette */
+@define-color theme_text_light    #211510;         /* Deep charcoal-brown so it's perfectly readable! */
+@define-color theme_text_muted    #6d6875;         /* Muted shadow grey text */
+@define-color theme_text_alt1     #b86b25;         /* Darker sandy orange for accent text */

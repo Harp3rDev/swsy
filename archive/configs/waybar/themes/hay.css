@@ -1,0 +1,13 @@
+/* 🌊 Hay-Chan's Vibrant Waybar Variable Map */
+@define-color theme_bg_dark       #fef08a;        /* High-energy Sunny Yellow background! */
+@define-color theme_accent        #f97316;        /* Bold Tiger Orange */
+@define-color theme_border        #f59e0b;        /* Warm Sunset Amber panel dividers */
+@define-color theme_focused_ws    #f97316;        /* Active workspace is brilliant Tiger Orange! */
+@define-color theme_block_alt1    #f59e0b;        /* Vibrant Amber module block */
+@define-color theme_block_alt2    #fed7aa;        /* Soft peach-orange secondary block */
+@define-color theme_clock_bg      #f97316;        /* Blazing Tiger Orange container for the clock */
+
+/* ⚠️ CRUCIAL HIGH-CONTRAST DARK TEXT PALETTE FOR BRIGHT BACKGROUNDS ⚠️ */
+@define-color theme_text_light    #1c1917;        /* Solid Ink Charcoal - Use over the yellow bg! */
+@define-color theme_text_muted    #44403c;        /* Muted dark brown for secondary details */
+@define-color theme_text_dark     #fafaf9;        /* Pure Flax White - ONLY for use inside the orange clock/workspace! */

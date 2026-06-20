@@ -1,0 +1,8 @@
+/* 🐈‍⬛ Venom Theme Wofi Variables (App Launcher) */
+@define-color wofi-bg             #0d0d0d;         /* Launcher window background */
+@define-color wofi-fg             #ffffff;         /* Default text color */
+@define-color wofi-border         #1db954;         /* Outer emerald green border */
+@define-color wofi-input-bg       #1a1a1a;         /* Search box background */
+@define-color wofi-input-brd      #1aa34a;         /* Search box border indicator */
+@define-color wofi-selected-bg    #1db954;         /* Selected row background */
+@define-color wofi-selected-fg    #0d0d0d;         /* Dark text over green background so you can read it! */

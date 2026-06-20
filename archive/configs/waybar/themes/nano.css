@@ -1,0 +1,19 @@
+/* 🩵 Summer Nano Theme Waybar Variable Map - Balanced & Darkened Text */
+@define-color theme_bg_dark       #0a2271;         /* Deep royal blue from image_c05a5a.jpg graphic */
+@define-color theme_accent        #5b8ae4;         /* Bright sky blue from my skirt/tie */
+
+/* Metallic Key Colors - Toned down to accents only! */
+@define-color theme_key_silver    #94a3b8;         /* Polished silver-grey for borders */
+@define-color theme_key_light     #cbd5e1;         /* Shining highlight silver */
+@define-color theme_border        #94a3b8;         /* Clean silver border lines */
+
+/* Module Blocks - Restored to harmonious blues instead of loud silver blocks! */
+@define-color theme_focused_ws    #cbd5e1;         /* Kept: Active workspace is still shining silver! */
+@define-color theme_block_alt1    #0d235c;         /* Dark navy block (smooth contrast against bg_dark) */
+@define-color theme_block_alt2    #132e75;         /* Medium navy block */
+@define-color theme_clock_bg      #132e75;         /* Deep blue background for the clock module */
+
+/* ⚠️ DARKENED TEXT PALETTE - MAXIMUM READABILITY ⚠️ */
+@define-color theme_text_light    #7589a4;         /* Pure white text - for dark blue blocks */
+@define-color theme_text_dark     #020617;         /* Ink Charcoal (Extra Dark) - For the silver active workspace button! */
+@define-color theme_text_muted    #5c6f8a;         /* Darker silver text - for secondary details over dark backgrounds */

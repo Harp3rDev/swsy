@@ -11,17 +11,19 @@ set $up k
 set $right l
 
 # Preferred Applications
-set $term foot
-set $menu wmenu-run
-set $browser librewolf
+set $term foot 
+set $menu wofi 
+set $browser zen 
 
+# Include current theme
+include ~/.config/sway/current_theme.conf
 
 ###############################################################################
 ## OUTPUT CONFIGURATION
 ###############################################################################
 
 # Default wallpaper
-output * bg /home/amy/Pictures/Wallpapers/674.jpg fill
+# output * bg /home/amy/Pictures/Wallpapers/marsh.jpg fill
 
 # Displays Layout (Internal & External HDMI)
 output eDP-1 res 1920x1080 position 0 0 scale 1.15
@@ -39,20 +41,22 @@ output HDMI-A-2 res 1920x1080 position 1920 0 scale 1.1
 # Set border style for new windows (removes title bar, 2px border)
 default_border pixel 2
 default_floating_border pixel 2
+gaps inner 8
+gaps outer 4
 
 # Force all existing windows on your current screen to update right now
 for_window [class=".*"] border pixel 2
 for_window [app_id=".*"] border pixel 2
 
+# Make titlebars smaller
+titlebar_padding 5 2
+titlebar_border_thickness 1
+
 # Window Colors
-# class                 border  backgr  text    indic   child_border
-client.focused          #577053 #577053 #ffffff #435840 #577053
-client.focused_inactive #232e26 #232e26 #a3b899 #232e26 #232e26
-client.unfocused        #1c251f #1c251f #a3b899 #1c251f #1c251f
-client.urgent           #7a4848 #7a4848 #ffffff #7a4848 #7a4848
+# Window colors handled by active theme
 
 # Font setting to Georgia
-font Georgia 18 
+font Georgia 15
 
 ###############################################################################
 ## INPUT CONFIGURATION
@@ -99,14 +103,16 @@ bindsym $mod+Shift+r reload
 floating_modifier $mod normal
 
 # Power Menu Mode
-set $power_menu (r)eboot, (s)hutdown, (e)xit sway, (l)ock
-bindsym $mod+Shift+p mode "$power_menu"; exec swaynag -t warning -m "Power Mode Active: [R]eboot | [S]hutdown | [E]xit | [L]ock | [Esc] Cancel"
+set $power_menu (r)eboot, (s)hutdown, (e)xit sway, (l)ock, (p)ut to sleep, (h)ibernate
+bindsym $mod+Shift+p mode "$power_menu"; exec swaynag -t warning -m "Power Mode Active: [R]eboot | [S]hutdown | [E]xit | [L]ock | [P]ut to sleep | [H]ibernate | [Esc] Cancel"
 
 mode "$power_menu" {
     bindsym r exec killall swaynag; exec systemctl reboot
     bindsym s exec killall swaynag; exec systemctl poweroff
     bindsym e exec killall swaynag; exec swaymsg exit
     bindsym l exec killall swaynag; exec swaylock; mode "default"
+    bindsym p exec killall swaynag; exec systemctl suspend
+    bindsym h exec killall swaynag; exec systemctl hibernate
 
     bindsym Return exec killall swaynag; mode "default"
     bindsym Escape exec killall swaynag; mode "default"
@@ -196,6 +202,16 @@ bindsym $mod+a focus parent
 bindsym $mod+Shift+minus move scratchpad
 bindsym $mod+minus scratchpad show
 
+# Theme switching
+bindsym $mod+Ctrl+g exec /home/amy/.config/sway/scripts/switch_theme.sh green # Holly
+bindsym $mod+Ctrl+b exec /home/amy/.config/sway/scripts/switch_theme.sh blue # Amy
+bindsym $mod+Ctrl+s exec /home/amy/.config/sway/scripts/switch_theme.sh strawberry
+bindsym $mod+Ctrl+v exec /home/amy/.config/sway/scripts/switch_theme.sh venom
+bindsym $mod+Ctrl+k exec /home/amy/.config/sway/scripts/switch_theme.sh kangaroo
+bindsym $mod+Ctrl+n exec /home/amy/.config/sway/scripts/switch_theme.sh nano # Nano-Chan
+bindsym $mod+Ctrl+h exec /home/amy/.config/sway/scripts/switch_theme.sh hay # Hay-Chan
+bindsym $mod+Ctrl+p exec /home/amy/.config/sway/scripts/switch_theme.sh snowy #Snowy Egret
+
 # Resize Window Mode
 mode "resize" {
     bindsym $left resize shrink width 10px
@@ -236,7 +252,7 @@ bindsym --locked XF86MonBrightnessDown exec brightnessctl set 5%-
 bindsym --locked XF86MonBrightnessUp exec brightnessctl set 5%+
 
 # Screenshots
-bindsym Print exec grim
+bindsym Print exec grim -g "$(slurp)" - | satty --filename - --early-exit --copy-command wl-copy 
 
 
 ###############################################################################
@@ -250,19 +266,22 @@ exec swayidle -w \
         before-sleep 'swaylock -f -c 000000'
 
 # Status Bar
-bar {
-    swaybar_command waybar
-}
+#bar {
+#    swaybar_command waybar
+#}
 
 # Dynamic Display Handler
 exec_always kanshi
 
-# Background Services & Applications
-exec copyq
-exec localsend
-exec easyeffects -w
-exec protonvpn-app --start-minimized
-exec nm-applet --indicator
+# Background Services & Applications 🎀
+# (We kill old instances first, then wait 2 seconds for Waybar's tray to wake up !!)
+exec_always killall copyq; copyq
+exec_always killall localsend; localsend --hidden
+exec_always killall easyeffects; easyeffects -w
+
+# Network and VPN Tray Fixes !! 🌐🔒
+exec_always killall nm-applet; sleep 2 && nm-applet --indicator
+exec_always killall protonvpn-app; sleep 2 && protonvpn-app --start-minimized
 
 # Include external system snippets
 include /etc/sway/config.d/*

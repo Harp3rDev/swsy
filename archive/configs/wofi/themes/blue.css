@@ -1,0 +1,8 @@
+/* 🌊 Deep Midnight Navy Theme Variables (Amy's Sweater) */
+@define-color wofi-bg          #111420; /* Near-black ink navy */
+@define-color wofi-fg          #7e91b8; /* Dimmed slate text */
+@define-color wofi-border      #3d59a1; /* Steel blue focused border */
+@define-color wofi-input-bg    #1e2942; /* Dark cozy sweater blue */
+@define-color wofi-input-brd   #3b4261; /* Muted indicator accent */
+@define-color wofi-selected-bg #1e2942; /* Highlight entry background */
+@define-color wofi-selected-fg #7aa2f7; /* High-contrast blue pop text */

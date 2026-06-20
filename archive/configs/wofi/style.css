@@ -1,0 +1,48 @@
+@import "/home/amy/.config/wofi/current-theme.css";
+
+/* Entire window wrapper */
+window {
+    font-family: "JetBrains Mono", "Noto Sans", sans-serif;
+    font-size: 14px;
+    background-color: @wofi-bg;
+    color: @wofi-fg;
+    border: 2px solid @wofi-border;
+    border-radius: 8px;
+}
+
+/* The search bar container */
+#outer-box {
+    padding: 12px;
+}
+
+/* The search input field itself */
+#input {
+    background-color: @wofi-input-bg;
+    color: @wofi-fg;
+    border: 1px solid @wofi-input-brd;
+    border-radius: 6px;
+    padding: 8px;
+    margin-bottom: 10px;
+}
+
+/* List items / results */
+#entry {
+    padding: 6px 10px;
+    border-radius: 4px;
+}
+
+/* Highlighted / Selected item */
+#entry:selected {
+    background-color: @wofi-selected-bg;
+}
+
+/* Selected item text */
+#entry:selected #text {
+    color: @wofi-selected-fg;
+    font-weight: bold;
+}
+
+/* Space out the icons next to the text */
+#img {
+    margin-right: 12px;
+}

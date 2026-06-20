@@ -1,0 +1,8 @@
+/* 🌊 Hay-Chan's Vibrant Wofi Variables (App Launcher) */
+@define-color wofi-bg              #fef08a;        /* Sunny Yellow launcher background */
+@define-color wofi-fg              #1c1917;        /* Ink Charcoal text for clear readability */
+@define-color wofi-border          #f97316;        /* Thick Tiger Orange outer frame */
+@define-color wofi-input-bg        #fed7aa;        /* Soft peach-orange input box */
+@define-color wofi-input-brd       #f59e0b;        /* Sunset Amber input border */
+@define-color wofi-selected-bg     #f97316;        /* Vivid Tiger Orange row for selection */
+@define-color wofi-selected-fg     #fafaf9;        /* Pure White text to pop over the orange selection */

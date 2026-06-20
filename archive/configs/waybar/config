@@ -12,7 +12,9 @@
     ],
     "modules-right": [
         "pulseaudio",
+        "backlight",
         "network",
+        "custom/vpn",
         "cpu",
         "memory",
         "battery",
@@ -33,14 +35,38 @@
 
     "pulseaudio": {
         "format": "VOL {volume}%",
-        "format-muted": "MUTED"
+        "format-muted": "MUTED",
+        "on-click": "pactl set-default-sink $(pactl list short sinks | grep -v $(pactl get-default-sink) | cut -f2 | head -n1)",
+        "on-click-right": "pavucontrol"
     },
 
-    "network": {
-        "format-wifi": "WIFI {essid}",
-        "format-ethernet": "ETH {ipaddr}",
-        "format-disconnected": "DISCONNECTED"
+    "backlight": {
+        "device": "intel_backlight",
+        "format": "{icon} {percent}%",
+        "format-icons": ["󰃞", "󰃟", "󰃠"],
+        "on-scroll-up": "brightnessctl set +1%",
+        "on-scroll-down": "brightnessctl set 1%-",
+        "min-length": 6,
+        "interval": 1
     },
+
+        "network": {
+        "interface": "wlan0", // Change this to your interface if needed!
+        "format-wifi": "  {essid} ({signalStrength}%)",
+        "format-ethernet": "󰈀  {ipaddr}/{cidr}",
+        "format-disconnected": "⚠  Disconnected",
+        "tooltip-format": "  {ifname} via {gwaddr}\n󰇚  {bandwidthDownBits}  󰕒  {bandwidthUpBits}",
+        "max-length": 150,
+        "min-length": 30,
+        "interval": 2
+    },
+
+    "custom/vpn": {
+    "interval": 3,
+    "return-type": "json",
+    "format": "{}",
+    "exec": "if nmcli connection show --active | grep -iq \"proton\"; then SERVER=$(nmcli -t -f NAME,TYPE connection show --active | grep -i \"proton\" | head -n1 | cut -d: -f1); echo \"{\\\"text\\\": \\\"🔒 Connected\\\", \\\"alt\\\": \\\"connected\\\", \\\"tooltip\\\": \\\"🛡️ Proton VPN Active\\\\nServer: $SERVER\\\"}\"; else echo \"{\\\"text\\\": \\\"🔓 Public\\\", \\\"alt\\\": \\\"disconnected\\\", \\\"tooltip\\\": \\\"⚠️ Not secured by Proton VPN\\\"}\"; fi"
+},
 
     "cpu": {
         "format": "CPU {usage}%"
@@ -55,7 +81,11 @@
             "warning": 30,
             "critical": 15
         },
-        "format": "BAT {capacity}%"
+    "format": "{icon} {capacity}%",
+    "format-charging": "󱐋 {icon} {capacity}%",
+    "format-discharging": "{icon} {capacity}%",
+    "format-full": "󰂄 {capacity}%",
+    "format-icons": ["󰂎", "󰁺", "󰁻", "󰁼", "󰁽", "󰁾", "󰁿", "󰂀", "󰂁", "󰂂", "󰁹"]
     },
 
      "clock": {
@@ -66,7 +96,7 @@
  },
 
     "tray": {
-        "icon-size": 14,
+        "icon-size": 16,
         "spacing": 10
     }
 }

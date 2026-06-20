@@ -1,0 +1,8 @@
+/* 🌲 Forest Green Theme Variables */
+@define-color wofi-bg          #1a241f; /* Deep forest/evergreen background */
+@define-color wofi-fg          #e2eae6; /* Soft sage white text */
+@define-color wofi-border      #557a63; /* Muted pine green border accent */
+@define-color wofi-input-bg    #24332b; /* Slightly lighter forest green */
+@define-color wofi-input-brd   #3d5446; /* Input border */
+@define-color wofi-selected-bg #557a63; /* Mossy forest green highlight */
+@define-color wofi-selected-fg #ffffff; /* Crisp white text */

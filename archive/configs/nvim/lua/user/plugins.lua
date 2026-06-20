@@ -42,19 +42,13 @@ local plugins = {
         config = true
     },
 
-    -- 4. Comment.nvim (Toggle comments with gcc or gc)
-    {
-        "numToStr/Comment.nvim",
-        config = true
-    },
-
-    -- 5. Gitsigns (Git indicators in the left gutter)
+    -- 4. Gitsigns (Git indicators in the left gutter)
     {
         "lewis6991/gitsigns.nvim",
         config = true
     },
 
-    -- 6. Lualine (Beautiful, themed status bar at the bottom)
+    -- 5. Lualine (Beautiful, themed status bar at the bottom)
     {
         "nvim-lualine/lualine.nvim",
         dependencies = { "nvim-tree/nvim-web-devicons" },

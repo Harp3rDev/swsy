@@ -1,0 +1,13 @@
+/* 🌊 [Theme Name] Waybar Variable Map */
+@define-color theme_bg_dark       #BASE_BG;        /* Main status bar background */
+@define-color theme_accent        #MAIN_ACCENT;    /* Primary highlight / brand color */
+@define-color theme_border        #BORDER_COLOR;   /* Separators and panel borders */
+@define-color theme_focused_ws    #MAIN_ACCENT;    /* Active workspace indicator */
+@define-color theme_block_alt1    #BLOCK_BG_1;     /* Sub-module block style A */
+@define-color theme_block_alt2    #BLOCK_BG_2;     /* Sub-module block style B */
+@define-color theme_clock_bg      #INDICATOR;      /* Accent container color for clock */
+
+/* Text Palette */
+@define-color theme_text_light    #TEXT_LIGHT;     /* Main high-contrast text color */
+@define-color theme_text_muted    #TEXT_MUTED;     /* Secondary / dimmed text color */
+@define-color theme_text_alt1     #TEXT_ALT;       /* Helper / tertiary text accent */
