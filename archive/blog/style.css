@@ -15,7 +15,7 @@ h1 {
     text-align: center;
     font-size: 60px;
     font-family: Georgia2;
-    color: #00ff3c;
+    color: #00ff3caf;
     text-shadow: 1px 1px 2px green, 0 0 25px green, 0 0 5px green;
 }
 
@@ -24,7 +24,7 @@ h2 {
     text-align: center;
     font-size: 20px;
     font-family: Georgia;
-    color: #10CC10
+    color: #1f931f
 }
 
 h3 {
@@ -39,7 +39,8 @@ h3 {
 
 #Copyright {
     position: fixed;
-    bottom: 0;
+    bottom: 15px;
+    left: 15px;
     color: #FFFFFF;
 }
 
@@ -135,16 +136,30 @@ th, td, table {
 p {
     font-family: Georgia;
     font-size: 18px;
-    color:#00ff3c;
+    color:#00ff3ca0;
     padding-top:20px;
-    padding-left: 40px;
+    padding-left: 10px;
+    padding-right: 10px;
 }
 
 #backbutton {
-    color:#FFFFFF;
+    color:#ffffff98;
     background-color:#000000;
     position: relative;
     float: left;
     font-size: 22px;
     left: 40px;
+    border-style: solid;
+    border-color: #ffffff92;
+    border-radius: 4px
+}
+
+article {
+    width: 80%;
+    background-color: #020d07cd;
+    margin: auto;
+    border-style: solid;
+    border-color: #051c0fcd;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
 }

@@ -9,14 +9,14 @@ body {
     /* background: linear-gradient(180deg, rgba(191,215,234,1),rgba(145,174,193,1), rgba(80,140,164,1), rgba(10,135,84,1), rgba(0,79,45,1)) */
     /* background: linear-gradient(180deg, rgba(88,80,122,1), rgba(91,97,138,1), rgba(158,173,200,1), rgba(185,226,140,1), rgba(214,216,79,1)) */
     /* background: linear-gradient(180deg, rgba(214,216,79,1), rgba(185,226,140,1) */
-    background: linear-gradient(180deg, rgba(158,173,200,1), rgba(91,97,138,1), rgba(88,80,122,1));
+    background: linear-gradient(180deg, rgb(193, 205, 226), rgb(160, 163, 182));
 }
 
 h1 {
     text-align: center;
     font-size: 120px;
     font-family: Georgia2;
-    color: #020101;
+    color: #000000;
 
 }
 
@@ -26,33 +26,35 @@ h1 {
 }
 
 #CW2 {
-    color: #6610acaf;
+    color: #760202af;
 }
 
 .CONTAINER {
     width: 90%;
     height: 65%;
-    border-width:1px;
-    color:#080808;
-    border-color:#00fff7;
+    border-style: solid;
+    border-width: 10px, 10px, 10px, 10px;
+    color:#100b0b;
+    border-color:#1e7f65;
     font-family: Georgia2;
     font-weight:bold;
     border-top-left-radius:20px;
     border-top-right-radius:20px;
     border-bottom-left-radius:20px;
     border-bottom-right-radius:20px;
-    box-shadow:inset 0px 1px 0px 0px #4ea06c;
-    text-shadow:inset 0px 1px 0px #35b250;
-    background-image: linear-gradient(#a0d863,#9c9e23);
+    background-image: linear-gradient(#b8cf9f,#91935f);
     margin: auto;
 }
 
 .BUTTON1 {
-    background-color: #11642c;
+    background-color: #1e7f65;
     color: #FFFFFF;
     margin-left: 10px;
     margin-top: 10px;
     font-family: Georgia2;
+    border-style: solid;
+    border-color: #1e7f65;
+    border-radius: 4px;
 }
 
 .news1 {
@@ -68,7 +70,7 @@ h1 {
 
 .topnav {
     overflow: hidden;
-    background-image: linear-gradient(#228b22, #008000);
+    background-image: linear-gradient(#75a875, #749c74);
 }
 
 .topnav a {
