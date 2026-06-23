@@ -20,6 +20,15 @@ h1 {
 
 }
 
+.logo {
+    display: block;
+    margin: auto;
+    width: 50%;
+    height: 25%;
+    padding-bottom: 20px;
+    padding-top: 20px;
+}
+
 #Copyright {
     position: fixed;
     bottom: 0;
