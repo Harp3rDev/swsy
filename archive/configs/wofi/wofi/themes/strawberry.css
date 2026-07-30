@@ -1,0 +1,8 @@
+/* 🌸 Cozy Strawberry Pink Theme Variables */
+@define-color wofi-bg           #875366; /* Balanced medium berry-pink background */
+@define-color wofi-fg           #fdebf0; /* Sweet cream white text for readable app names */
+@define-color wofi-border       #d48da3; /* Your signature Sway focused strawberry pink! */
+@define-color wofi-input-bg     #734455; /* Deeper berry-chocolate for a cozy entry box */
+@define-color wofi-input-brd    #e9b3c2; /* Bright bubblegum pink indicator border */
+@define-color wofi-selected-bg  #d48da3; /* Highlight entry pops exactly like a focused window! */
+@define-color wofi-selected-fg  #ffffff; /* High-contrast crisp white pop text when highlighted */

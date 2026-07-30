@@ -1,0 +1,8 @@
+/* 🌊 [Theme Name] Wofi Variables (App Launcher) */
+@define-color wofi-bg             #BASE_BG;        /* Launcher window background */
+@define-color wofi-fg             #TEXT_LIGHT;     /* Default text color for items */
+@define-color wofi-border         #MAIN_ACCENT;    /* Launcher window outer border */
+@define-color wofi-input-bg       #BLOCK_BG_1;     /* Search input box background */
+@define-color wofi-input-brd      #TEXT_ALT;       /* Search input box border indicator */
+@define-color wofi-selected-bg    #MAIN_ACCENT;    /* Selected row item background */
+@define-color wofi-selected-fg    #TEXT_LIGHT;     /* Selected row item text color */

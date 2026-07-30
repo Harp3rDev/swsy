@@ -1,0 +1,8 @@
+/* 🦘 Sandy Yellow Theme Wofi Variables */
+@define-color wofi-bg             #f8f1ed;         /* Bright sand background */
+@define-color wofi-fg             #264653;         /* Deep readable text */
+@define-color wofi-border         #e9c46a;         /* Sunshine yellow outer border */
+@define-color wofi-input-bg       #e2d4c9;         /* Soft warm input background */
+@define-color wofi-input-brd      #f4a261;         /* Orange-sand input border */
+@define-color wofi-selected-bg    #e9c46a;         /* Sunshine yellow row highlight */
+@define-color wofi-selected-fg    #264653;         /* Dark text over the yellow selection */

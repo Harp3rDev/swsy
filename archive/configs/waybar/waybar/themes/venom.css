@@ -1,0 +1,13 @@
+/* 🐈‍⬛ Venom Theme Waybar Variable Map */
+@define-color theme_bg_dark       #0d0d0d;         /* Deep void black background */
+@define-color theme_accent        #1db954;         /* Rich venomous green */
+@define-color theme_border        #262626;         /* Dark sleek separators */
+@define-color theme_focused_ws    #1db954;         /* Active workspace */
+@define-color theme_block_alt1    #1a1a1a;         /* Dark grey sub-block A */
+@define-color theme_block_alt2    #222222;         /* Dark grey sub-block B */
+@define-color theme_clock_bg      #1aa34a;         /* Darker green forest tone for clock */
+
+/* Text Palette */
+@define-color theme_text_light    #ffffff;         /* Pure crisp white for visibility */
+@define-color theme_text_muted    #757575;         /* Dull fur grey text */
+@define-color theme_text_alt1     #2ed164;         /* Slightly brighter green text accent */

@@ -1,0 +1,13 @@
+/* 🌊 SnowyEgret Signature Waybar Variable Map */
+@define-color theme_bg_dark       #5B507A;        /* Deep Twilight Purple base bar */
+@define-color theme_accent        #B9E28C;        /* Electric Pistachio highlight */
+@define-color theme_border        #5B618A;        /* Slate blue panel borders */
+@define-color theme_focused_ws    #B9E28C;        /* Your active workspace glows bright lime-green! */
+@define-color theme_block_alt1    #004F2D;        /* Rich Deep Forest Green module block */
+@define-color theme_block_alt2    #508CA4;        /* Muted ocean teal secondary block */
+@define-color theme_clock_bg      #D6D84F;        /* Vibrant Pear Yellow-Green container for the clock */
+
+/* Text Palette */
+@define-color theme_text_light    #BFD7EA;        /* Frost Ice Blue main text */
+@define-color theme_text_muted    #9EADC8;        /* Soft lavender-grey dimmed text */
+@define-color theme_text_dark     #004F2D;        /* Deep ink green text (perfect legibility inside the lime/yellow blocks!) */

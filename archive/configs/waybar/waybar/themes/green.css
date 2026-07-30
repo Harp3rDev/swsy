@@ -1,0 +1,12 @@
+/* 🌿 Cozy Forest Green Variable Map */
+@define-color theme_bg_dark #1c251f;
+@define-color theme_accent #577053;
+@define-color theme_border #2e3b2f;
+@define-color theme_focused_ws #435840;
+@define-color theme_block_alt1 #232e26;
+@define-color theme_block_alt2 #2b3a2f;
+@define-color theme_clock_bg #3d523a;
+
+@define-color theme_text_light #e2ebd5;
+@define-color theme_text_muted #a3b899;
+@define-color theme_text_alt1 #bcd4b3;

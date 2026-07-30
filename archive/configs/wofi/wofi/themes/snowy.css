@@ -1,0 +1,8 @@
+/* 🌊 SnowyEgret Signature Wofi Variables (App Launcher) */
+@define-color wofi-bg              #5B507A;        /* Twilight Purple launcher background */
+@define-color wofi-fg              #BFD7EA;        /* Frost Ice Blue item text */
+@define-color wofi-border          #B9E28C;        /* Striking Electric Pistachio outer frame */
+@define-color wofi-input-bg        #004F2D;        /* Deep Forest Green search input box */
+@define-color wofi-input-brd       #D6D84F;        /* Pear yellow-green active input border */
+@define-color wofi-selected-bg     #B9E28C;        /* Electric Pistachio row for selected items */
+@define-color wofi-selected-fg     #004F2D;        /* Deep forest contrast text over selection */

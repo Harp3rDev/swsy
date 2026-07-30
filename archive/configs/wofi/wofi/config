@@ -1,0 +1,21 @@
+# Basic layout
+show=drun
+width=500
+height=400
+location=center
+orientation=vertical
+
+# Search settings
+matching=strict-contains
+insensitive=true
+prompt=Search apps...
+ignore_metadata=true
+
+# UI Polish
+allow_images=true
+image_size=24
+no_actions=true
+hide_scroll=true
+
+# Behavior
+key_exit=Escape

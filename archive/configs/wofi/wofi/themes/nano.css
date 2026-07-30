@@ -1,0 +1,8 @@
+/* 🩵 Summer Nano Theme Wofi Variables - Max-Grey Upgrade */
+@define-color wofi-bg             #1e293b;         /* CHANGED: Dark matte-charcoal background */
+@define-color wofi-fg             #f1f5f9;         /* Off-white/light-silver text for unselected items */
+@define-color wofi-border         #94a3b8;         /* Polished key-silver outer frame */
+@define-color wofi-input-bg       #334155;         /* CHANGED: Gunmetal grey text entry box */
+@define-color wofi-input-brd      #cbd5e1;         /* Bright shining silver input border */
+@define-color wofi-selected-bg    #cbd5e1;         /* Shining silver background for active selection */
+@define-color wofi-selected-fg    #020617;         /* Ink Charcoal text for maximum legibility */

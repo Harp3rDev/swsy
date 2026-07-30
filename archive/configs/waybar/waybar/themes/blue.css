@@ -1,0 +1,12 @@
+/* 🌊 Dreamy Deep Ocean Blue Variable Map */
+@define-color theme_bg_dark #151b26;
+@define-color theme_accent #4d648d;
+@define-color theme_border #242f42;
+@define-color theme_focused_ws #334e68;
+@define-color theme_block_alt1 #1b2332;
+@define-color theme_block_alt2 #212b3d;
+@define-color theme_clock_bg #2d4059;
+
+@define-color theme_text_light #d5e2eb;
+@define-color theme_text_muted #99afb8;
+@define-color theme_text_alt1 #b3cbd4;

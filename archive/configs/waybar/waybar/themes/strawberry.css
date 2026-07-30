@@ -1,0 +1,13 @@
+/* 🌸 Cute Strawberry Pink Variable Map (Balanced Medium-Pink Theme) */
+@define-color theme_bg_dark #875366;       /* A beautiful medium berry-pink! Deep enough for white text, but unmistakably pink */
+@define-color theme_accent #d48da3;        /* Your signature Sway strawberry pink */
+@define-color theme_border #e9b3c2;        /* Soft helper pink for the borders */
+@define-color theme_focused_ws #d48da3;    /* Active workspace matches your focused Sway window! */
+@define-color theme_block_alt1 #734455;    /* Slightly deeper berry tone for sub-modules */
+@define-color theme_block_alt2 #633948;    /* A cozy, slightly darker pink-chocolate block alternative */
+@define-color theme_clock_bg #a66275;      /* Beautiful accent pulled from your Sway indicator color! */
+
+/* 🌸 Uniform Text Palette */
+@define-color theme_text_light #ffffff;    /* Crisp white text stays perfectly readable on the medium pink! */
+@define-color theme_text_muted #fdebf0;    /* Soft cream white for secondary text to keep contrast high */
+@define-color theme_text_alt1 #e9b3c2;     /* Bright helper pink */

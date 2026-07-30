@@ -1,8 +1,10 @@
+aircrack-ng
 android-tools
 at
 base
 bind
 binwalk
+blueman
 bluez-utils
 btop
 cava
@@ -17,6 +19,7 @@ discord
 dmenu
 docker
 docker-compose
+dotnet-sdk
 easyeffects
 engrampa
 ex-vi-compat
@@ -45,6 +48,7 @@ inetutils
 intel-ucode
 kanshi
 kdenlive
+kismet
 kitty
 krita
 lib32-gamemode
@@ -58,10 +62,10 @@ mate-user-share
 mtpfs
 nano
 ncdu
-net-tools
 ntfs-3g
 nwg-look
 obs-studio
+ollama
 onboard
 openbsd-netcat
 pastel
@@ -75,10 +79,13 @@ proton-vpn-gtk-app
 pv
 python-attrdict
 python-gbinder
+python-scikit-learn
+python-standard-telnetlib
 qbittorrent
 reflector
 ristretto
 rofi
+rust
 sassc
 satty
 sbctl
@@ -88,6 +95,7 @@ tailscale
 tcpdump
 tealdeer
 testdisk
+tftp-hpa
 throttled
 thunar
 thunderbird
@@ -96,6 +104,7 @@ traceroute
 ttf-cascadia-code-nerd
 ttf-nerd-fonts-symbols
 unrar-free
+uv
 vint
 virtualbox
 virtualbox-guest-utils
@@ -103,7 +112,6 @@ vlc
 wget
 wikiman
 winetricks
-wireless_tools
 wireshark-qt
 woff2-font-awesome
 wofi
