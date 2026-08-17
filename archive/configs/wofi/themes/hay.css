@@ -1,8 +1,0 @@
-/* 🌅 Hay-Chan's Sunset Pink Wofi Variables (App Launcher) */
-@define-color wofi-bg              #fef08a;        /* Warm Yellow launcher background */
-@define-color wofi-fg              #1c1917;        /* Ink Charcoal text */
-@define-color wofi-border          #ec4899;        /* Thick Fuchsia Pink outer frame */
-@define-color wofi-input-bg        #fed7aa;        /* Soft peach-orange input box */
-@define-color wofi-input-brd       #f97316;        /* Sunset Orange input border */
-@define-color wofi-selected-bg     #ec4899;        /* Vivid Fuchsia row for selection */
-@define-color wofi-selected-fg     #fafaf9;        /* Pure White text to pop over selection */

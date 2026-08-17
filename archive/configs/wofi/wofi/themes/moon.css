@@ -1,8 +1,0 @@
-/* 🌊 Lunar Eclipse Wofi Variables (App Launcher) */
-@define-color wofi-bg              #0d0813;    /* Launcher window background */
-@define-color wofi-fg              #f4f0fa;    /* Default text color for items */
-@define-color wofi-border          #5a3d7c;    /* Launcher window outer border */
-@define-color wofi-input-bg        #140d1f;    /* Search input box background */
-@define-color wofi-input-brd       #d4b8e8;    /* Search input box border indicator */
-@define-color wofi-selected-bg     #5a3d7c;    /* Selected row item background */
-@define-color wofi-selected-fg     #f4f0fa;    /* Selected row item text color */
